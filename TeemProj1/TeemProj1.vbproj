@@ -1,0 +1,838 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{624176BF-32C6-4538-8340-A9A9E61CDFF4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>TeemProj1.My.MyApplication</StartupObject>
+    <RootNamespace>TeemProj1</RootNamespace>
+    <AssemblyName>TeemProj1</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\Louise Zandra\OneDrive\Desktop\TEEMv.2\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>11</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>TeemProj1.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>TeemProj1.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Untitled-design-_19_.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>604DFDFCA3EB9FE80A6E3E60777B30CD7D9ADF70</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>TeemProj1_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FireSharp, Version=2.0.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\FireSharp.2.0.4\lib\portable-net45+sl5+wp8+win8\FireSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis, Version=1.62.0.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Apis.1.62.0\lib\net45\Google.Apis.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis.Auth, Version=1.62.0.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Apis.Auth.1.62.0\lib\net461\Google.Apis.Auth.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis.Auth.PlatformServices, Version=1.62.0.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Apis.Auth.1.62.0\lib\net461\Google.Apis.Auth.PlatformServices.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis.Core, Version=1.62.0.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Apis.Core.1.62.0\lib\net45\Google.Apis.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis.Drive.v2, Version=1.62.0.3155, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Apis.Drive.v2.1.62.0.3155\lib\net45\Google.Apis.Drive.v2.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis.PlatformServices, Version=1.62.0.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Apis.1.62.0\lib\net45\Google.Apis.PlatformServices.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
+      <HintPath>..\packages\Guna.UI2.WinForms.2.0.4.4\lib\net472\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Threading.Tasks, Version=1.0.12.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.Async.1.0.168\lib\net40\Microsoft.Threading.Tasks.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Threading.Tasks.Extensions, Version=1.0.12.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.Async.1.0.168\lib\net40\Microsoft.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Threading.Tasks.Extensions.Desktop, Version=1.0.168.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.Async.1.0.168\lib\net40\Microsoft.Threading.Tasks.Extensions.Desktop.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.WebView2.WinForms">
+      <HintPath>..\..\teemprac1\packages\Microsoft.Web.WebView2.1.0.2045.28\lib\net45\Microsoft.Web.WebView2.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="MySqlConnector, Version=2.0.0.0, Culture=neutral, PublicKeyToken=d33d3e53aa5f8c92, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySqlConnector.2.2.7\lib\net471\MySqlConnector.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Diagnostics.DiagnosticSource, Version=6.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Diagnostics.DiagnosticSource.6.0.0\lib\net461\System.Diagnostics.DiagnosticSource.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Memory, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.5\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net" />
+    <Reference Include="System.Net.Http.Extensions, Version=2.2.28.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Net.Http.2.2.28\lib\net45\System.Net.Http.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Primitives, Version=4.2.28.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Net.Http.2.2.28\lib\net45\System.Net.Http.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.6.0.0\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="20itemsassess.Designer.vb">
+      <DependentUpon>20itemsassess.vb</DependentUpon>
+    </Compile>
+    <Compile Include="20itemsassess.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="accountsett.Designer.vb">
+      <DependentUpon>accountsett.vb</DependentUpon>
+    </Compile>
+    <Compile Include="accountsett.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ActiveCourses.Designer.vb">
+      <DependentUpon>ActiveCourses.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ActiveCourses.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AssessmentForm.Designer.vb">
+      <DependentUpon>AssessmentForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AssessmentForm.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="assessmentview.Designer.vb">
+      <DependentUpon>assessmentview.vb</DependentUpon>
+    </Compile>
+    <Compile Include="assessmentview.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CalendarForm.Designer.vb">
+      <DependentUpon>CalendarForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CalendarForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassBLL.vb" />
+    <Compile Include="ClassDAL.vb" />
+    <Compile Include="CompletedCourse.Designer.vb">
+      <DependentUpon>CompletedCourse.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CompletedCourse.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Connection.vb" />
+    <Compile Include="DBCalen.vb" />
+    <Compile Include="DBCRUD.vb" />
+    <Compile Include="DboardForm.Designer.vb">
+      <DependentUpon>DboardForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DboardForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DTConnection.vb" />
+    <Compile Include="filecontent.Designer.vb">
+      <DependentUpon>filecontent.vb</DependentUpon>
+    </Compile>
+    <Compile Include="filecontent.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HeaderProfile.Designer.vb">
+      <DependentUpon>HeaderProfile.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HeaderProfile.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainChoose.Designer.vb">
+      <DependentUpon>MainChoose.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MainChoose.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MCourseForm.Designer.vb">
+      <DependentUpon>MCourseForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MCourseForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuDropdown.Designer.vb">
+      <DependentUpon>MenuDropdown.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MenuDropdown.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyProfile.Designer.vb">
+      <DependentUpon>MyProfile.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MyProfile.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PanelChoose.Designer.vb">
+      <DependentUpon>PanelChoose.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PanelChoose.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Progress.Designer.vb">
+      <DependentUpon>Progress.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Progress.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.vb">
+      <DependentUpon>MainForm.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="registration.vb" />
+    <Compile Include="ResourceForm.Designer.vb">
+      <DependentUpon>ResourceForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ResourceForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ResourceUser.Designer.vb">
+      <DependentUpon>ResourceUser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ResourceUser.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="studaddclass.Designer.vb">
+      <DependentUpon>studaddclass.vb</DependentUpon>
+    </Compile>
+    <Compile Include="studaddclass.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="studassessment.Designer.vb">
+      <DependentUpon>studassessment.vb</DependentUpon>
+    </Compile>
+    <Compile Include="studassessment.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="studCalenAdd.Designer.vb">
+      <DependentUpon>studCalenAdd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="studCalenAdd.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="studclasslist.Designer.vb">
+      <DependentUpon>studclasslist.vb</DependentUpon>
+    </Compile>
+    <Compile Include="studclasslist.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="studclasslistmenu.Designer.vb">
+      <DependentUpon>studclasslistmenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="studclasslistmenu.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="StudCourse.Designer.vb">
+      <DependentUpon>StudCourse.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StudCourse.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="StudCourseFeed.Designer.vb">
+      <DependentUpon>StudCourseFeed.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StudCourseFeed.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentEnrolled.Designer.vb">
+      <DependentUpon>StudentEnrolled.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StudentEnrolled.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="studentperformanceoanel.Designer.vb">
+      <DependentUpon>studentperformanceoanel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="studentperformanceoanel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="studexamdata.Designer.vb">
+      <DependentUpon>studexamdata.vb</DependentUpon>
+    </Compile>
+    <Compile Include="studexamdata.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="StudFile.Designer.vb">
+      <DependentUpon>StudFile.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StudFile.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="studfilecontent.Designer.vb">
+      <DependentUpon>studfilecontent.vb</DependentUpon>
+    </Compile>
+    <Compile Include="studfilecontent.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="studnotif.Designer.vb">
+      <DependentUpon>studnotif.vb</DependentUpon>
+    </Compile>
+    <Compile Include="studnotif.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="studnotifyuc.Designer.vb">
+      <DependentUpon>studnotifyuc.vb</DependentUpon>
+    </Compile>
+    <Compile Include="studnotifyuc.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="studOpenFile.Designer.vb">
+      <DependentUpon>studOpenFile.vb</DependentUpon>
+    </Compile>
+    <Compile Include="studOpenFile.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="studResource.Designer.vb">
+      <DependentUpon>studResource.vb</DependentUpon>
+    </Compile>
+    <Compile Include="studResource.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="StudSign.Designer.vb">
+      <DependentUpon>StudSign.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StudSign.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudSignUp.Designer.vb">
+      <DependentUpon>StudSignUp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StudSignUp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="studstartexam.Designer.vb">
+      <DependentUpon>studstartexam.vb</DependentUpon>
+    </Compile>
+    <Compile Include="studstartexam.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TAddCourse.Designer.vb">
+      <DependentUpon>TAddCourse.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TAddCourse.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TCalendar.Designer.vb">
+      <DependentUpon>TCalendar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TCalendar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tcalenmon.Designer.vb">
+      <DependentUpon>Tcalenmon.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Tcalenmon.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TCAssessment.Designer.vb">
+      <DependentUpon>TCAssessment.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TCAssessment.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tclasses.Designer.vb">
+      <DependentUpon>Tclasses.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Tclasses.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TClassList.Designer.vb">
+      <DependentUpon>TClassList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TClassList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TCourseFeed.Designer.vb">
+      <DependentUpon>TCourseFeed.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TCourseFeed.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TCourses.Designer.vb">
+      <DependentUpon>TCourses.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TCourses.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TCreateAssess.Designer.vb">
+      <DependentUpon>TCreateAssess.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TCreateAssess.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TDboard.Designer.vb">
+      <DependentUpon>TDboard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TDboard.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TDisplayCourses.Designer.vb">
+      <DependentUpon>TDisplayCourses.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TDisplayCourses.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TFileContent.Designer.vb">
+      <DependentUpon>TFileContent.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TFileContent.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TMainForm.Designer.vb">
+      <DependentUpon>TMainForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TMainForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TMenuDropdown.Designer.vb">
+      <DependentUpon>TMenuDropdown.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TMenuDropdown.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="topstudent.Designer.vb">
+      <DependentUpon>topstudent.vb</DependentUpon>
+    </Compile>
+    <Compile Include="topstudent.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TPostAnnoun.Designer.vb">
+      <DependentUpon>TPostAnnoun.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TPostAnnoun.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TProfile.Designer.vb">
+      <DependentUpon>TProfile.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TProfile.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TResource.Designer.vb">
+      <DependentUpon>TResource.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TResource.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TSettings.Designer.vb">
+      <DependentUpon>TSettings.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TSettings.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TSignin.Designer.vb">
+      <DependentUpon>TSignin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TSignin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TSignup.Designer.vb">
+      <DependentUpon>TSignup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TSignup.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TStudent.Designer.vb">
+      <DependentUpon>TStudent.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TStudent.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tstudentlists.Designer.vb">
+      <DependentUpon>Tstudentlists.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Tstudentlists.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateForm.Designer.vb">
+      <DependentUpon>UpdateForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="uploadfile.Designer.vb">
+      <DependentUpon>uploadfile.vb</DependentUpon>
+    </Compile>
+    <Compile Include="uploadfile.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="20itemsassess.resx">
+      <DependentUpon>20itemsassess.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="accountsett.resx">
+      <DependentUpon>accountsett.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ActiveCourses.resx">
+      <DependentUpon>ActiveCourses.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AssessmentForm.resx">
+      <DependentUpon>AssessmentForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="assessmentview.resx">
+      <DependentUpon>assessmentview.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CalendarForm.resx">
+      <DependentUpon>CalendarForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CompletedCourse.resx">
+      <DependentUpon>CompletedCourse.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DboardForm.resx">
+      <DependentUpon>DboardForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="filecontent.resx">
+      <DependentUpon>filecontent.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HeaderProfile.resx">
+      <DependentUpon>HeaderProfile.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainChoose.resx">
+      <DependentUpon>MainChoose.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MCourseForm.resx">
+      <DependentUpon>MCourseForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuDropdown.resx">
+      <DependentUpon>MenuDropdown.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyProfile.resx">
+      <DependentUpon>MyProfile.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PanelChoose.resx">
+      <DependentUpon>PanelChoose.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Progress.resx">
+      <DependentUpon>Progress.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ResourceForm.resx">
+      <DependentUpon>ResourceForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ResourceUser.resx">
+      <DependentUpon>ResourceUser.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="studaddclass.resx">
+      <DependentUpon>studaddclass.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="studassessment.resx">
+      <DependentUpon>studassessment.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="studCalenAdd.resx">
+      <DependentUpon>studCalenAdd.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="studclasslist.resx">
+      <DependentUpon>studclasslist.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="studclasslistmenu.resx">
+      <DependentUpon>studclasslistmenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudCourse.resx">
+      <DependentUpon>StudCourse.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudCourseFeed.resx">
+      <DependentUpon>StudCourseFeed.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentEnrolled.resx">
+      <DependentUpon>StudentEnrolled.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="studentperformanceoanel.resx">
+      <DependentUpon>studentperformanceoanel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="studexamdata.resx">
+      <DependentUpon>studexamdata.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudFile.resx">
+      <DependentUpon>StudFile.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="studfilecontent.resx">
+      <DependentUpon>studfilecontent.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="studnotif.resx">
+      <DependentUpon>studnotif.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="studnotifyuc.resx">
+      <DependentUpon>studnotifyuc.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="studOpenFile.resx">
+      <DependentUpon>studOpenFile.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="studResource.resx">
+      <DependentUpon>studResource.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudSign.resx">
+      <DependentUpon>StudSign.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudSignUp.resx">
+      <DependentUpon>StudSignUp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="studstartexam.resx">
+      <DependentUpon>studstartexam.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TAddCourse.resx">
+      <DependentUpon>TAddCourse.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TCalendar.resx">
+      <DependentUpon>TCalendar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tcalenmon.resx">
+      <DependentUpon>Tcalenmon.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TCAssessment.resx">
+      <DependentUpon>TCAssessment.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tclasses.resx">
+      <DependentUpon>Tclasses.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TClassList.resx">
+      <DependentUpon>TClassList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TCourseFeed.resx">
+      <DependentUpon>TCourseFeed.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TCourses.resx">
+      <DependentUpon>TCourses.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TCreateAssess.resx">
+      <DependentUpon>TCreateAssess.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TDboard.resx">
+      <DependentUpon>TDboard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TDisplayCourses.resx">
+      <DependentUpon>TDisplayCourses.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TFileContent.resx">
+      <DependentUpon>TFileContent.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TMainForm.resx">
+      <DependentUpon>TMainForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TMenuDropdown.resx">
+      <DependentUpon>TMenuDropdown.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="topstudent.resx">
+      <DependentUpon>topstudent.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TPostAnnoun.resx">
+      <DependentUpon>TPostAnnoun.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TProfile.resx">
+      <DependentUpon>TProfile.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TResource.resx">
+      <DependentUpon>TResource.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TSettings.resx">
+      <DependentUpon>TSettings.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TSignin.resx">
+      <DependentUpon>TSignin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TSignup.resx">
+      <DependentUpon>TSignup.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TStudent.resx">
+      <DependentUpon>TStudent.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tstudentlists.resx">
+      <DependentUpon>Tstudentlists.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateForm.resx">
+      <DependentUpon>UpdateForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uploadfile.resx">
+      <DependentUpon>uploadfile.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+    <None Include="TeemProj1_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Untitled-design-_19_.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AcroPDFLib">
+      <Guid>{05BFD3F1-6319-4F30-B752-C7A22889BCC4}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="AxAcroPDFLib">
+      <Guid>{05BFD3F1-6319-4F30-B752-C7A22889BCC4}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets" Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" />
+  <Target Name="EnsureBclBuildImported" BeforeTargets="BeforeBuild" Condition="'$(BclBuildImported)' == ''">
+    <Error Condition="!Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" Text="This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=317567." HelpKeyword="BCLBUILD2001" />
+    <Error Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" Text="The build restored NuGet packages. Build the project again to include these packages in the build. For more information, see http://go.microsoft.com/fwlink/?LinkID=317568." HelpKeyword="BCLBUILD2002" />
+  </Target>
+</Project>
